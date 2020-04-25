@@ -5,327 +5,80 @@
     <!-- <meta charset="UTF-8" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-
-    <style>
-        * {
-            --fontSecond: #C9CCD0;
-            --prime-color: #1C232C;
-            --background: #F5F5F5;
-            --side-background: #448391;
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-             box-sizing: border-box;
-            
-        }
-        
-        html,
-        body {
-            margin: 0px;
-            height: 100vh;
-            font-family: Roboto;
-            height: 100vh;
-            overflow: hidden;
-        }
-        
-        .image img,
-        .my img {
-            border-radius: 50%;
-        }
-        
-        aside {
-            
-            float: left;
-            width: 25%;
-            background-color: var(--prime-color);
-            height: 100vh;
-            border-radius: 0px 30px 30px 0px;
-            position: relative;
-        }
-        
-        aside header {
-            position: relative;
-            top: 0px;
-            margin: 0vh 1vw;
-            color: var(--prime-color);
-            padding: 1.5vh 0px;
-            border-bottom: 1px solid var(--fontSecond);
-        }
-        
-        aside header img {
-            width: 35%;
-            float: left;
-            height: 35%;
-        }
-        
-        aside header p {
-            font-family: Roboto;
-            font-size: 4.5vw;
-            color: var(--fontSecond);
-            display: inline-block;
-            padding-top: 1vh;
-            margin: 0%;
-            height: auto;
-        }
-        
-        aside nav {
-            color: var(--fontSecond);
-            margin-top: 20px;
-            /* margin-left: 10%; */
-        }
-        
-        aside nav .but {
-            clear: both;
-            width: 100%;
-            padding: 1vh;
-            position: relative;
-            font-size: 170%;
-            display: block;
-            text-decoration: none;
-            cursor: pointer;
-            color: var(--fontSecond);
-        }
-        
-        aside nav .but:hover {
-            background-color: var(--side-background);
-        }
-        
-        .profile {
-            width: 100%;
-            position: relative;
-            transform: translateX(-4%);
-        }
-        
-        .profile .my {
-            width: 35%;
-            float: left;
-            color: var(--prime-color);
-            display: inline-table;
-            margin-left: 10%;
-        }
-        
-        .profile .name {
-            position: relative;
-            display: inline-table;
-            margin-left: 3%;
-            top: 45%;
-            font-size: 160%;
-            transform: translateY(10%);
-            width: 50%;
-            float: left;
-        }
-        
-        .profile .name a {
-            color: var(--fontSecond);
-            display: block;
-            text-decoration: none;
-            cursor: pointer;
-            margin-top: 16px;
-        }
-        
-        aside nav .but img {
-            width: 7%;
-            margin-right: 2vh;
-            margin-left: 10%;
-        }
-        
-        .setting {
-            position: absolute;
-            bottom: 1px;
-            right: 10px;
-            transition: .3s;
-            padding: 1.8vh;
-            transform: rotate(0deg);
-            /* margin: 3vh; */
-        }
-        
-        .setting:hover {
-            transform: rotate(-90deg);
-        }
-        /* ///////////////////////content/////////////////// */
-        
-        .content {
-            
-            background: var(--background);
-            width: 75%;
-            height: 100vh;
-            position: relative;
-        }
-        
-        
-        /* /////////responsive /////// */
-        
-            /* ///////////////////con////////////// */
-            .content {
-                width: 75%;
-                float:left;
-            }
-            html {
-                background-color: var(--background);
-            }
-            .content .addinfo{
-                height: 10%;
-                text-align: right;
-                padding: 10px;
-                margin: 20px;
-            }
-            .content .addinfo a{
-                margin: 10px;
-            }
-            .content .addinfo input{
-                margin-top: 10px;
-                border-radius: 25px;
-                background: #F49C2D;
-                }
-            .content .info {
-                margin:0px 30px 20px 60px;
-                padding: 20px 20px ;
-                text-align: center;
-                width: 100%;
-                height: 90%
-            }
-            .content .info .rectangle{
-                
-                float:left;
-                width: 25%;
-                height: 40%;
-                margin: 0px 20px 20px 30px;
-                padding: 20px;
-                background: #F49C2D;
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                border-radius: 15px;
-                
-            }
-            .content .rectangle div{
-                margin:10px;
-                font-size: 30px;
-                line-height: 35px
-            }
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="employee.css">
+    
 </head>
 
 <body>
-    <aside>
-        <header>
-            <div><img src="img/logo.png" alt="logo" /></div>
-            <p>CMMS</p>
-        </header>
-        <nav>
-            <div class="profile">
-                <div class="my">
-                    <img src="img/myicon.png" alt="my_icon" width="100%" height="100%">,
-                </div>
-                <div class="name">
-                    <a href="info.html">akram assi</a>
-                    <a href="#">logout <img src="img/logout.png" width="12%"></a>
-                </div>
-            </div>
-            <div style="clear: both;">
-                <a class="but" href="#" style="padding-top: 3.5vh;"><img src="img/home.png"><span>Home</span></a>
-                <a class="but" href="#"><img src="img/empl.png"><span>Employees</span></a>
-                <a class="but" href="#"><img src="img/stat.png"><span>Statistics</span></a>
-                <a class="but" href="#"><img src="img/car-parts.png"><span>Part</span></a>
-                <a class="but" href="#"><img src="img/problem.png"><span>Problem</span></a>
-                <a class="but" href="#"><img src="img/history.png"><span>History</span></a>
-                <a class="but" href="#"><img src="img/list.png"><span>Car in center</span></a>
-                <a class="but" href="#"><img src="img/customers.png"><span>Custamer</span></a>
-                <a class="setting" href="info.html"><img src="img/gear.png" width="100%"></a>
-            </div>
 
-        </nav>
-    </aside>
-    
     <!-- add and remove sign for employee. -->
     
     <div class="content">
         <div class="addinfo">
-            <button id="add"><img src="img/plus.png"></button>
-            <button id="remove"><img src="img/minus.png"></button>
-            <dialog id="addrect">
-              <form method="dialog">
-                <input type="text" placeholder="User ID"><br>
-                <input type="password" placeholder="password">
-                <menu>
-                  <button value="cancel">Cancel</button>
-                  <button id="confirmBtn" value="default">Confirm</button>
-                </menu>
-              </form>
-            </dialog>
+            <button id="add" onclick="document.getElementById('id01').style.display='block';"><img src="image/plus.png"></button>
+            <button id="remove" onclick="document.getElementById('id02').style.display='block';"><img src="image/minus.png"></button>
+            <div id="id01" class="modal">
+                <div class="pop">
+                    <input type="text" placeholder="User ID" ><br>
+                    <input type="password" placeholder="password">
+                    <menu>
+                        <button value="cancel" style="background:#E16031">Cancel</button>
+                        <button id="confirmBtn" value="default" style="background:#F49C2D">Confirm</button>
+                    </menu>
+                </div>
+              
+            </div>
             
-            <dialog id="removerect">
-              <form method="dialog">
-                <input type="text" placeholder="User ID To Remove"><br>
-                <menu>
-                  <button value="cancel">Cancel</button>
-                  <button id="confirmBtn" value="default">Confirm</button>
-                </menu>
-              </form>
-            </dialog>
+            <div id="id02" class="modal">
+                <div class="pop">
+                    <input type="text" placeholder="User ID To Remove" ><br>
+                    <menu>
+                        <button value="cancel" style="background:#E16031">Cancel</button>
+                        <button id="confirmBtn" value="default" style="background:#F49C2D">Confirm</button>
+                    </menu>
+                </div>
+              
+            </div>
         </div>
         
         
         <div class="info">
             <div class="rectangle">
-                <img src="img/myicon.png"></img>
+                <img src="image/myicon.png"></img>
                 <div>name</div>
                 <div>specialty</div>
             </div>
             <div class="rectangle">
-                <img src="img/myicon.png">
+                <img src="image/myicon.png">
                 <div>name</div>
                 <div>specialty</div>
             </div>
             <div class="rectangle">
-                <img src="img/myicon.png">
+                <img src="image/myicon.png">
                 <div>name</div>
                 <div>specialty</div>
             </div>
             
             <div class="rectangle">
-                <img src="img/myicon.png">
+                <img src="image/myicon.png">
                 <div>name</div>
                 <div>specialty</div>
             </div>
             <div class="rectangle">
-                <img src="img/myicon.png">
+                <img src="image/myicon.png">
                 <div>name</div>
                 <div>specialty</div>
             </div>
             <div class="rectangle">
-                <img src="img/myicon.png">
+                <img src="image/myicon.png">
                 <div>name</div>
                 <div>specialty</div>
             </div>
         </div>
     
     </div>
+    <script src="emp.js"></script>
     
-    
-    <script>
-        var add = document.getElementById('add');
-        var remove = document.getElementById('remove');
-        var addrect = document.getElementById('addrect');
-        var removerect = document.getElementById('removerect');
-        
-        // "Update details" button opens the <dialog> modally
-        add.addEventListener('click', function onOpen() {
-          if (typeof addrect.showModal === "function") {
-            addrect.showModal();
-          } else {
-            alert("The <dialog> API is not supported by this browser");
-          }
-        });
-        remove.addEventListener('click', function onOpen() {
-          if (typeof removerect.showModal === "function") {
-            removerect.showModal();
-          } else {
-            alert("The <dialog> API is not supported by this browser");
-          }
-        });
-        
-
-    </script>
-
 </body>
 
 </html>
