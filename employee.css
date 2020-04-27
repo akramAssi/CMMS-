@@ -58,7 +58,7 @@
     /* top: 15%; */
     /* left: 50%; */
     /* transform: translateX(-50%); */
-    width: 45%;
+    width: 40%;
     margin: auto auto;
     height: 65vh;
     background: var(--background);
@@ -68,21 +68,41 @@
     animation: animatezoom 1s;
     text-align: center;
 }
+.pop .input{
+    height: 80%;
+}
 .pop input {
         border-radius: 25px;
-        width: 50%;
+        width: 75%;
         height: 40px;
         clear: both;
         margin-top: 30px;
-        background: #F49C2D;
+        background: var(--background);
+        border: 2px solid #1C232C;
+        padding: 10px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+.pop form{height: 100%}
+.pop input[type=text]{
+    background: #F49C2D;
+    border:none;
+}
+.pop menu{
+   text-align: right;
+    height: 20%;
+    
 }
 .pop button{
-        width:40%;
+        width:20%;
         margin: 10px;
         height: 30px;
         margin-top: 30px;
-        
+        border-radius: 25px;
+        box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+
 }
+
 .modal {
     display: none;
     position: fixed;
