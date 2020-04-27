@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- <meta charset="UTF-8" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="part.css">
+    
+</head>
+
+<body>
+
+    <!-- add and remove sign for employee. -->
+    
+    <div class="content">
+        
+        <div class="addinfo">
+            
+            <button id="add" onclick="document.getElementById('id01').style.display='block';"><img src="image/plus.png"></button>
+            <button id="remove" onclick="document.getElementById('id02').style.display='block';"><img src="image/minus.png"></button>
+            <div id="id01" class="modal">
+                <div class="pop">
+                    <form>
+                        <input type="text" placeholder="part id" ><br>
+                        <input type="text" placeholder="part name">
+                        <input type="text" placeholder="count latest sell">
+                        <input type="text" placeholder="the seller name">
+                        <input type="text" placeholder="the seller number">
+                        <menu>
+                            <button value="cancel" style="background:#E16031">Cancel</button>
+                            <button id="confirmBtn" value="default" style="background:#F49C2D">Confirm</button>
+                        </menu>
+                    </form>
+                </div>
+              
+            </div>
+            
+            <div id="id02" class="modal">
+                <div class="pop">
+                    <form>
+                        <input type="text" placeholder="Part ID to remove" ><br>
+                        
+                        <menu>
+                            <button value="cancel" style="background:#E16031">Cancel</button>
+                            <button id="confirmBtn" value="default" style="background:#F49C2D">Confirm</button>
+                        </menu>
+                    </form>
+                </div>
+              
+            </div>
+            
+        <input type="text" name="search" placeholder="search">
+        </div>
+        <table>
+          <tr>
+            <th>NO.PART</th>
+            <th>NAME PART</th>
+            <th>COUNT IN STOCK</th>
+            <th>NAME OF the seller</th>
+            <th>NUMBER</th>
+            <th>DATE</th>
+            <th>count</th>
+          </tr>
+          <tr>
+            <td>NO.PART</td>
+            <td>NAME PART</td>
+            <td>COUNT IN STOCK</td>
+            <td>NAME OF the seller</td>
+            <td>NUMBER</td>
+            <td>DATE</td>
+            <td>count</td>
+          </tr>
+          <tr>
+            <td>NO.PART</td>
+            <td>NAME PART</td>
+            <td>COUNT IN STOCK</td>
+            <td>NAME OF the seller</td>
+            <td>NUMBER</td>
+            <td>DATE</td>
+            <td>count</td>
+          </tr>
+          <tr>
+            <td>NO.PART</td>
+            <td>NAME PART</td>
+            <td>COUNT IN STOCK</td>
+            <td>NAME OF the seller</td>
+            <td>NUMBER</td>
+            <td>DATE</td>
+            <td>count</td>
+          </tr>
+          <tr>
+            <td>NO.PART</td>
+            <td>NAME PART</td>
+            <td>COUNT IN STOCK</td>
+            <td>NAME OF the seller</td>
+            <td>NUMBER</td>
+            <td>DATE</td>
+            <td>count</td>
+          </tr>
+          <tr>
+            <td>NO.PART</td>
+            <td>NAME PART</td>
+            <td>COUNT IN STOCK</td>
+            <td>NAME OF the seller</td>
+            <td>NUMBER</td>
+            <td>DATE</td>
+            <td>count</td>
+          </tr>
+        </table>
+    </div>
+    <script src="emp.js"></script>
+    
+</body>
+
+</html>

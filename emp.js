@@ -1,23 +1,4 @@
-var add = document.getElementById('add');
-        var remove = document.getElementById('remove');
-        var addrect = document.getElementById('addrect');
-        var removerect = document.getElementById('removerect');
-        
-        // "Update details" button opens the <dialog> modally
-        add.addEventListener('click', function onOpen() {
-          if (typeof addrect.showModal === "function") {
-            addrect.showModal();
-          } else {
-            alert("The <dialog> API is not supported by this browser");
-          }
-        });
-        remove.addEventListener('click', function onOpen() {
-          if (typeof removerect.showModal === "function") {
-            removerect.showModal();
-          } else {
-            alert("The <dialog> API is not supported by this browser");
-          }
-        });
+
 var modal = document.getElementById('id01');
 var modal1 = document.getElementById('id02');
         // When the user clicks anywhere outside of the modal, close it
